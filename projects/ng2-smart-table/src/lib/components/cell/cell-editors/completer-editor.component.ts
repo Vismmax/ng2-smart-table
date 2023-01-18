@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CompleterItem, CompleterService } from 'ng2-completer';
+import { CompleterService } from 'ng2-completer';
 
 import { DefaultEditor } from './default-editor';
 
@@ -31,7 +31,7 @@ export class CompleterEditorComponent extends DefaultEditor implements OnInit {
     }
   }
 
-  onEditedCompleter(event: CompleterItem): boolean {
+  onEditedCompleter(event: { title: '' }): boolean {
     this.cell.newValue = event.title;
     return false;
   }
