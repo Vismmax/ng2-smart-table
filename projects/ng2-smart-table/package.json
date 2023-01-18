@@ -1,21 +1,24 @@
 {
-  "name": "@lordofnoldor/ng2-smart-table",
-  "version": "2.6.3",
-  "description": "Angular Smart Table",
+  "name": "@quantum/ng2-smart-table",
+  "version": "1.7.14",
+  "description": "Angular Smart Table for Angular 14",
   "author": "akveo",
+  "contributors": [{
+    "name":"vismmax"
+  }],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cgokceli/ng2-smart-table.git"
+    "url": "git+https://github.com/vismmax/ng2-smart-table.git"
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "tslib": "^2.4.0"
+    "tslib": "^2.4.1"
   },
   "peerDependencies": {
     "ng2-completer": "^9.0.1",
-    "@angular/common": "13.3.9",
-    "@angular/core": "13.3.9",
-    "@angular/forms": "13.3.9"
+    "@angular/common": "^14.2.12",
+    "@angular/core": "^14.2.12",
+    "@angular/forms": "^14.2.12"
   }
 }

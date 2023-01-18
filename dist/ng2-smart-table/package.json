@@ -1,0 +1,46 @@
+{
+  "name": "@quantum/ng2-smart-table",
+  "version": "1.7.14",
+  "description": "Angular Smart Table for Angular 14",
+  "author": "akveo",
+  "contributors": [
+    {
+      "name": "vismmax"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vismmax/ng2-smart-table.git"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "tslib": "^2.4.1"
+  },
+  "peerDependencies": {
+    "ng2-completer": "^9.0.1",
+    "@angular/common": "^14.2.12",
+    "@angular/core": "^14.2.12",
+    "@angular/forms": "^14.2.12"
+  },
+  "module": "fesm2015/quantum-ng2-smart-table.mjs",
+  "es2020": "fesm2020/quantum-ng2-smart-table.mjs",
+  "esm2020": "esm2020/quantum-ng2-smart-table.mjs",
+  "fesm2020": "fesm2020/quantum-ng2-smart-table.mjs",
+  "fesm2015": "fesm2015/quantum-ng2-smart-table.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/quantum-ng2-smart-table.mjs",
+      "es2020": "./fesm2020/quantum-ng2-smart-table.mjs",
+      "es2015": "./fesm2015/quantum-ng2-smart-table.mjs",
+      "node": "./fesm2015/quantum-ng2-smart-table.mjs",
+      "default": "./fesm2020/quantum-ng2-smart-table.mjs"
+    }
+  },
+  "sideEffects": false
+}
