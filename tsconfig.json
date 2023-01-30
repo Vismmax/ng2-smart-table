@@ -1,32 +1,36 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "angular2-smart-table": [
+        "dist/angular2-smart-table/angular2-smart-table",
+        "dist/angular2-smart-table"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "downlevelIteration": true,
     "experimentalDecorators": true,
+    "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
+    "target": "es2017",
     "module": "es2020",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
     "lib": [
-      "es2019",
+      "es2018",
       "dom"
-    ],
-    "paths": {
-      "ng2-smart-table": [
-        "projects/ng2-smart-table/src/public-api.ts"
-      ]
-    }
+    ]
   },
   "angularCompilerOptions": {
-    "strictTemplates": true,
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
   }
 }
