@@ -1,0 +1,23 @@
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import * as i0 from "@angular/core";
+import * as i1 from "../tag/tag.component";
+import * as i2 from "@angular/common";
+export class TagsListComponent {
+    constructor() {
+        this.close = new EventEmitter();
+    }
+    closedTag(tag) {
+        this.close.emit(tag);
+    }
+}
+TagsListComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.12", ngImport: i0, type: TagsListComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+TagsListComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.12", type: TagsListComponent, selector: "angular2-smart-table-tags-list", inputs: { tags: "tags" }, outputs: { close: "close" }, ngImport: i0, template: "<div class=\"add-tag-list\" id=\"tagslist\">\n  <angular2-smart-table-tag\n    *ngFor=\"let tag of tags\"\n    [item]=\"tag\"\n    (close)=\"closedTag($event)\"\n  ></angular2-smart-table-tag>\n</div>\n", styles: ["*{box-sizing:border-box}*{padding:0;margin:0}ul{list-style-type:none}.add-tag-list{font-family:font8272;font-size:1.5em}.add-tag-list ul li{padding-left:20px;padding-right:20px;padding-bottom:8px;display:flex;flex-direction:row-reverse;float:left}.add-tag-list ul li:last-child{padding-right:0}.closeButton{display:inline}.closeButton:after{content:\"\\f057\";padding-left:4px;font-family:FontAwesome;color:#df0024;cursor:pointer}.closeButton:hover:after{color:#900110;transition:.6s linear}\n"], components: [{ type: i1.TagComponent, selector: "angular2-smart-table-tag", inputs: ["item"], outputs: ["close"] }], directives: [{ type: i2.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.12", ngImport: i0, type: TagsListComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'angular2-smart-table-tags-list', template: "<div class=\"add-tag-list\" id=\"tagslist\">\n  <angular2-smart-table-tag\n    *ngFor=\"let tag of tags\"\n    [item]=\"tag\"\n    (close)=\"closedTag($event)\"\n  ></angular2-smart-table-tag>\n</div>\n", styles: ["*{box-sizing:border-box}*{padding:0;margin:0}ul{list-style-type:none}.add-tag-list{font-family:font8272;font-size:1.5em}.add-tag-list ul li{padding-left:20px;padding-right:20px;padding-bottom:8px;display:flex;flex-direction:row-reverse;float:left}.add-tag-list ul li:last-child{padding-right:0}.closeButton{display:inline}.closeButton:after{content:\"\\f057\";padding-left:4px;font-family:FontAwesome;color:#df0024;cursor:pointer}.closeButton:hover:after{color:#900110;transition:.6s linear}\n"] }]
+        }], propDecorators: { tags: [{
+                type: Input
+            }], close: [{
+                type: Output
+            }] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGFncy1saXN0LmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL2FuZ3VsYXIyLXNtYXJ0LXRhYmxlL3NyYy9saWIvY29tcG9uZW50cy90YWdzL3RhZ3MtbGlzdC90YWdzLWxpc3QuY29tcG9uZW50LnRzIiwiLi4vLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvYW5ndWxhcjItc21hcnQtdGFibGUvc3JjL2xpYi9jb21wb25lbnRzL3RhZ3MvdGFncy1saXN0L3RhZ3MtbGlzdC5jb21wb25lbnQuaHRtbCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUMsU0FBUyxFQUFFLFlBQVksRUFBRSxLQUFLLEVBQUUsTUFBTSxFQUFDLE1BQU0sZUFBZSxDQUFDOzs7O0FBT3JFLE1BQU0sT0FBTyxpQkFBaUI7SUFMOUI7UUFTYyxVQUFLLEdBQUcsSUFBSSxZQUFZLEVBQU8sQ0FBQztLQUs3QztJQUhHLFNBQVMsQ0FBQyxHQUFRO1FBQ2QsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7SUFDekIsQ0FBQzs7K0dBUlEsaUJBQWlCO21HQUFqQixpQkFBaUIsNkhDUDlCLDRNQU9BOzRGREFhLGlCQUFpQjtrQkFMN0IsU0FBUzsrQkFDSSxnQ0FBZ0M7OEJBTWpDLElBQUk7c0JBQVosS0FBSztnQkFFSSxLQUFLO3NCQUFkLE1BQU0iLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NvbXBvbmVudCwgRXZlbnRFbWl0dGVyLCBJbnB1dCwgT3V0cHV0fSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdhbmd1bGFyMi1zbWFydC10YWJsZS10YWdzLWxpc3QnLFxuICAgIHN0eWxlVXJsczogWycuL3RhZ3MtbGlzdC5jb21wb25lbnQuc2NzcyddLFxuICAgIHRlbXBsYXRlVXJsOiAnLi90YWdzLWxpc3QuY29tcG9uZW50Lmh0bWwnLFxufSlcbmV4cG9ydCBjbGFzcyBUYWdzTGlzdENvbXBvbmVudCB7XG5cbiAgICBASW5wdXQoKSB0YWdzITogYW55W107XG5cbiAgICBAT3V0cHV0KCkgY2xvc2UgPSBuZXcgRXZlbnRFbWl0dGVyPGFueT4oKTtcblxuICAgIGNsb3NlZFRhZyh0YWc6IGFueSkge1xuICAgICAgICB0aGlzLmNsb3NlLmVtaXQodGFnKTtcbiAgICB9XG59XG4iLCI8ZGl2IGNsYXNzPVwiYWRkLXRhZy1saXN0XCIgaWQ9XCJ0YWdzbGlzdFwiPlxuICA8YW5ndWxhcjItc21hcnQtdGFibGUtdGFnXG4gICAgKm5nRm9yPVwibGV0IHRhZyBvZiB0YWdzXCJcbiAgICBbaXRlbV09XCJ0YWdcIlxuICAgIChjbG9zZSk9XCJjbG9zZWRUYWcoJGV2ZW50KVwiXG4gID48L2FuZ3VsYXIyLXNtYXJ0LXRhYmxlLXRhZz5cbjwvZGl2PlxuIl19

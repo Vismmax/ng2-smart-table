@@ -1,0 +1,33 @@
+import { EventEmitter, OnChanges } from '@angular/core';
+import { Grid } from '../../../lib/grid';
+import { Row } from '../../../lib/data-set/row';
+import { DataSource } from '../../../lib/data-source/data-source';
+import { DeleteConfirmEvent, DeleteEvent, EditEvent } from '../../../lib/events';
+import { SecurityTrustType } from '../../../pipes/bypass-security-trust.pipe';
+import * as i0 from "@angular/core";
+export declare class TbodyEditDeleteComponent implements OnChanges {
+    grid: Grid;
+    row: Row;
+    source: DataSource;
+    deleteConfirm: EventEmitter<DeleteConfirmEvent>;
+    edit: EventEmitter<EditEvent>;
+    delete: EventEmitter<DeleteEvent>;
+    editRowSelect: EventEmitter<any>;
+    editRowButtonContent: string;
+    editButtonBypassSecurityTrust: SecurityTrustType;
+    editHiddenWhenFunction: (row: Row) => boolean;
+    editDisabledWhenFunction: (row: Row) => boolean;
+    deleteHiddenWhenFunction: (row: Row) => boolean;
+    deleteDisabledWhenFunction: (row: Row) => boolean;
+    deleteRowButtonContent: string;
+    deleteButtonBypassSecurityTrust: SecurityTrustType;
+    onEdit(event: any): void;
+    onDelete(event: any): void;
+    get editVisible(): boolean;
+    get editDisabled(): boolean;
+    get deleteVisible(): boolean;
+    get deleteDisabled(): boolean;
+    ngOnChanges(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<TbodyEditDeleteComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TbodyEditDeleteComponent, "angular2-st-tbody-edit-delete", never, { "grid": "grid"; "row": "row"; "source": "source"; "deleteConfirm": "deleteConfirm"; }, { "edit": "edit"; "delete": "delete"; "editRowSelect": "editRowSelect"; }, never, never>;
+}
